@@ -3,20 +3,20 @@
 """
 
 
-def greatest_common_divisor(a: int, b: int) -> int:
+def greatest_common_divisor(num_a: int, num_b: int) -> int:
     """
         A method to compute the greatest common divisor.
     Args:
-        a (int): The first number.
-        b (int): Second number
+        num_a (int): The first number.
+        num_b (int): Second number
 
     Returns:
         The greatest common divisor.
     """
-    if b == 0:
-        return a
-    print(f">>> Value of b: {b}")
-    return greatest_common_divisor(b, a % b)
+    if num_b == 0:
+        return num_a
+    print(f">>> Value of num_b: {num_b}")
+    return greatest_common_divisor(num_b, num_a % num_b)
 
 
 if __name__ == "__main__":
